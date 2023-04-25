@@ -3,10 +3,13 @@
 
 #include <iostream>
 #include<string>
+
 using namespace std;
+
 #include "Shape.h"
+#include "Rectangle.h"
 
 int main()
 {
-    
+
 }

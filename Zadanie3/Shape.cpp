@@ -48,4 +48,17 @@ void Shape::Alloc() {
 		for (i = 0; i < width; i++)
 			tab[j][i];
 	}
+
+}
+
+Shape::~Shape() {
+	int j;
+	counter--;
+	cout << "Kasuje shape\nZostalo: " << counter << "\n";
+	for (j = 0; j < height; j++)
+		delete tab[j];
+	delete tab;
+
+	cout << "Destruktor shape\n";
+
 }

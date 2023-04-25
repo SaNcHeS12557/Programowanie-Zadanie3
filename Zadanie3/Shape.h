@@ -18,5 +18,7 @@ public:
 	Shape(int h, char s, string c);
 
 	static int counter;
+
+	// friend class Forest;
 };
 
