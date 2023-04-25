@@ -20,4 +20,22 @@ void Shape::Print() {
 		cout << endl;
 	}
 
+	cout<< "\033[0m";
+
+}
+
+Shape::Shape(int h, char s, string c) {
+	int i, j;
+	height = h;
+	width = 1;
+	symbol = s;
+
+	cout << "Konstruktor Shape z parametrami\n";
+
+	if (c == "green") color = "\033[1;32m";
+	if (c == "red") color = "\033[1;31m";
+	if (c == "yellow") color = "\033[1;33m";
+
+	counter++;
+
 }
