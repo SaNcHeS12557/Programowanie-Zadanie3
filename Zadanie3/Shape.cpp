@@ -39,3 +39,13 @@ Shape::Shape(int h, char s, string c) {
 	counter++;
 
 }
+
+void Shape::Alloc() {
+	int i, j;
+	tab = new int* [height];
+	for (j = 0; j < height; j++) {
+		tab[j] = new int[width];
+		for (i = 0; i < width; i++)
+			tab[j][i];
+	}
+}
