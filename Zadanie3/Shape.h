@@ -16,6 +16,7 @@ public:
 	void Alloc();
 	
 	Shape(int h, char s, string c);
+	~Shape();
 
 	static int counter;
 

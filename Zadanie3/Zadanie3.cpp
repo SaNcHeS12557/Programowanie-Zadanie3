@@ -9,7 +9,14 @@ using namespace std;
 #include "Shape.h"
 #include "Rectangle.h"
 
+int Shape::counter = 0;
+
 int main()
 {
+	int i, j;
 
+	Rectangle p(5, 7, '*', "green");
+
+	p.Print();
+	cout << endl;
 }
