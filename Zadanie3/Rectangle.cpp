@@ -19,3 +19,11 @@ Rectangle::Rectangle(int h, char s, string c) :Shape(h, s, c) {
 	Fill();
 
 }
+
+void Rectangle::Fill() {
+	int i, j;
+	for (j = 0; j < width; j++) {
+		for (i = 0; i < width; i++)
+			tab[j][i] = 1;
+	}
+}
